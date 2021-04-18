@@ -5,6 +5,9 @@ build:
 build-and-run: build
 	./go_algorithms
 
+format-style:
+	go fmt ./...
+
 run:
 	go run main.go
 
