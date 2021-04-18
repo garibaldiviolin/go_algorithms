@@ -6,7 +6,16 @@ import (
 )
 
 func main() {
-	list := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	list := make([]int, 10_000_000)
+    for i := range list {
+        list[i] = i + 1
+    }
 
-	fmt.Println(binary_search.BinarySearch(list, 3))
+	fmt.Println(binary_search.BinarySearch(list, -1))
+	fmt.Println(binary_search.BinarySearch(list, 0))
+	fmt.Println(binary_search.BinarySearch(list, 1))
+	fmt.Println(binary_search.BinarySearch(list, 7_777_777))
+	fmt.Println(binary_search.BinarySearch(list, 10_000_000))
+	fmt.Println(binary_search.BinarySearch(list, 10_000_001))
+	fmt.Println(binary_search.BinarySearch(list, 10_000_002))
 }
