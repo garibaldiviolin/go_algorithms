@@ -6,13 +6,13 @@ import (
 
 func TestBinarySearch(t *testing.T) {
 	list := make([]int, 10)
-    for i := range list {
-        list[i] = i + 1
-    }
+	for i := range list {
+		list[i] = i + 1
+	}
 
 	parameters := []struct {
-		number int
-		expected_found bool
+		number            int
+		expected_found    bool
 		expected_position int
 	}{
 		{-1, false, -1},
@@ -38,7 +38,7 @@ func TestBinarySearch(t *testing.T) {
 			t.Errorf("Number 5 expected to be found.")
 		}
 		if position != parameters[i].expected_position {
-			t.Errorf("Position expected to be 4.")	
+			t.Errorf("Position expected to be 4.")
 		}
 	}
 

@@ -7,9 +7,9 @@ import (
 
 func main() {
 	list := make([]int, 10_000_000)
-    for i := range list {
-        list[i] = i + 1
-    }
+	for i := range list {
+		list[i] = i + 1
+	}
 
 	fmt.Println(binary_search.BinarySearch(list, -1))
 	fmt.Println(binary_search.BinarySearch(list, 0))

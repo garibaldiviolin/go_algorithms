@@ -6,7 +6,7 @@ func BinarySearch(list []int, number int) (bool, int) {
 	end_position := list_length - 1
 
 	for {
-		middle_position := int( (start_position + end_position) / 2)
+		middle_position := int((start_position + end_position) / 2)
 		middle_number := list[middle_position]
 
 		if end_position < 0 || start_position >= list_length {
